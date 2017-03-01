@@ -1,0 +1,99 @@
+\hypertarget{class_bike}{\section{Bike Class Reference}
+\label{class_bike}\index{Bike@{Bike}}
+}
+
+
+Simple class for defining bike objects.  
+
+
+
+
+{\ttfamily \#include $<$Bike.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_bike_a4ea5dcdd17d53ea982d693b890b08380}{void \hyperlink{class_bike_a4ea5dcdd17d53ea982d693b890b08380}{drawwalls} ()}\label{class_bike_a4ea5dcdd17d53ea982d693b890b08380}
+
+\begin{DoxyCompactList}\small\item\em Draw the walls at the back of the bike. \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a0ae353aaf9b269166b2c9d617d4261c9}{\hyperlink{class_bike_a0ae353aaf9b269166b2c9d617d4261c9}{Bike} ()}\label{class_bike_a0ae353aaf9b269166b2c9d617d4261c9}
+
+\begin{DoxyCompactList}\small\item\em Constructor of bike. \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a15fe906332d5407e78d195a1763af5ad}{bool \hyperlink{class_bike_a15fe906332d5407e78d195a1763af5ad}{collide} (\hyperlink{classcord}{cord} ppos1, \hyperlink{classcord}{cord} pos1, std\-::string s, int bikid)}\label{class_bike_a15fe906332d5407e78d195a1763af5ad}
+
+\begin{DoxyCompactList}\small\item\em Tell if a bike collides with a wall. \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a96d3e3515257ab50079c39d2f3bf29d8}{void \hyperlink{class_bike_a96d3e3515257ab50079c39d2f3bf29d8}{move} ()}\label{class_bike_a96d3e3515257ab50079c39d2f3bf29d8}
+
+\begin{DoxyCompactList}\small\item\em Updates the position of the bike. \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a2d5ecf38ba57d63ffd37fae578e21008}{void \hyperlink{class_bike_a2d5ecf38ba57d63ffd37fae578e21008}{equate} (\hyperlink{class_bike}{Bike} B)}\label{class_bike_a2d5ecf38ba57d63ffd37fae578e21008}
+
+\begin{DoxyCompactList}\small\item\em Equate the properties of two bikes. \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a2e01e6f80129da96c1c2629e3573f68e}{void \hyperlink{class_bike_a2e01e6f80129da96c1c2629e3573f68e}{message} (float x, float y, int z)}\label{class_bike_a2e01e6f80129da96c1c2629e3573f68e}
+
+\begin{DoxyCompactList}\small\item\em Analyse the message received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_bike_acc47277e4b3412ea778063c5dcef9f40}{int \hyperlink{class_bike_acc47277e4b3412ea778063c5dcef9f40}{lifetime}}\label{class_bike_acc47277e4b3412ea778063c5dcef9f40}
+
+\begin{DoxyCompactList}\small\item\em time for explosion after death \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a4e5a7b8c2e1817085df4f2a68a363c89}{\hyperlink{structcolor}{color} $\ast$ \hyperlink{class_bike_a4e5a7b8c2e1817085df4f2a68a363c89}{clr}}\label{class_bike_a4e5a7b8c2e1817085df4f2a68a363c89}
+
+\begin{DoxyCompactList}\small\item\em color of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a0e3a837129abcddc396b409fd04d9807}{\hyperlink{classcord}{cord} \hyperlink{class_bike_a0e3a837129abcddc396b409fd04d9807}{vel}}\label{class_bike_a0e3a837129abcddc396b409fd04d9807}
+
+\begin{DoxyCompactList}\small\item\em velocity of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_afd87ee680455e4eb6eb8fbfd77e9d600}{\hyperlink{classcord}{cord} \hyperlink{class_bike_afd87ee680455e4eb6eb8fbfd77e9d600}{prev\-\_\-vel}}\label{class_bike_afd87ee680455e4eb6eb8fbfd77e9d600}
+
+\begin{DoxyCompactList}\small\item\em previous velocity of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_ac2a2d9aaeb44e3c14945a3e98e5202fa}{\hyperlink{classobjloader}{objloader} $\ast$ \hyperlink{class_bike_ac2a2d9aaeb44e3c14945a3e98e5202fa}{obj}}\label{class_bike_ac2a2d9aaeb44e3c14945a3e98e5202fa}
+
+\begin{DoxyCompactList}\small\item\em pointer to wavefront .obj file \end{DoxyCompactList}\item 
+\hypertarget{class_bike_af47288031902e6fc5a76b300b413bd22}{int \hyperlink{class_bike_af47288031902e6fc5a76b300b413bd22}{bike\-\_\-mesh}}\label{class_bike_af47288031902e6fc5a76b300b413bd22}
+
+\begin{DoxyCompactList}\small\item\em pointer to gl\-Gen\-List containing 3\-D bike mesh \end{DoxyCompactList}\item 
+\hypertarget{class_bike_ada81b156c5b12914fc6b06a3dc46bb4a}{std\-::string \hyperlink{class_bike_ada81b156c5b12914fc6b06a3dc46bb4a}{dir}}\label{class_bike_ada81b156c5b12914fc6b06a3dc46bb4a}
+
+\begin{DoxyCompactList}\small\item\em direction of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a8f760d363dc6b8ec68133031a8e15bad}{std\-::string \hyperlink{class_bike_a8f760d363dc6b8ec68133031a8e15bad}{prev\-\_\-dir}}\label{class_bike_a8f760d363dc6b8ec68133031a8e15bad}
+
+\begin{DoxyCompactList}\small\item\em previous direction of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_adbf1ed3b4a794e69623ddce6c691b12c}{std\-::vector$<$ \hyperlink{structline}{line} $>$ $\ast$ \hyperlink{class_bike_adbf1ed3b4a794e69623ddce6c691b12c}{hwall}}\label{class_bike_adbf1ed3b4a794e69623ddce6c691b12c}
+
+\begin{DoxyCompactList}\small\item\em vector containing coordinates of horizontal walls \end{DoxyCompactList}\item 
+\hypertarget{class_bike_ad897d0fbf474e6352fc34424c79d2dfd}{std\-::vector$<$ \hyperlink{structline}{line} $>$ $\ast$ \hyperlink{class_bike_ad897d0fbf474e6352fc34424c79d2dfd}{vwall}}\label{class_bike_ad897d0fbf474e6352fc34424c79d2dfd}
+
+\begin{DoxyCompactList}\small\item\em vector containing coordinates of vertical walls \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a3afc4e694ca2dcb4850f840bc299d99b}{int \hyperlink{class_bike_a3afc4e694ca2dcb4850f840bc299d99b}{bikenum}}\label{class_bike_a3afc4e694ca2dcb4850f840bc299d99b}
+
+\begin{DoxyCompactList}\small\item\em unique identifier of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_ad2cd5324bf953525d87fca12c4f78ade}{\hyperlink{classcord}{cord} \hyperlink{class_bike_ad2cd5324bf953525d87fca12c4f78ade}{pos}}\label{class_bike_ad2cd5324bf953525d87fca12c4f78ade}
+
+\begin{DoxyCompactList}\small\item\em position of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a66d1e1fa08942b709cf43b18a5f708b8}{\hyperlink{classcord}{cord} \hyperlink{class_bike_a66d1e1fa08942b709cf43b18a5f708b8}{ppos}}\label{class_bike_a66d1e1fa08942b709cf43b18a5f708b8}
+
+\begin{DoxyCompactList}\small\item\em previous position of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_ac5b404a64f9c893e6197509fa8f9b574}{\hyperlink{classcord}{cord} \hyperlink{class_bike_ac5b404a64f9c893e6197509fa8f9b574}{ptpos}}\label{class_bike_ac5b404a64f9c893e6197509fa8f9b574}
+
+\begin{DoxyCompactList}\small\item\em previous turn position of bike \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a856ccfba4773cb502f20543988c3be28}{bool \hyperlink{class_bike_a856ccfba4773cb502f20543988c3be28}{alive}}\label{class_bike_a856ccfba4773cb502f20543988c3be28}
+
+\begin{DoxyCompactList}\small\item\em boolean containing if the bike is alive or not \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a6a23b626c27e70d7df7d4ba33acd8153}{bool \hyperlink{class_bike_a6a23b626c27e70d7df7d4ba33acd8153}{artificial}}\label{class_bike_a6a23b626c27e70d7df7d4ba33acd8153}
+
+\begin{DoxyCompactList}\small\item\em true if this bike is computer player \end{DoxyCompactList}\item 
+\hypertarget{class_bike_a60962e91ae810aa778bab17257e0f3e4}{bool {\bfseries morealive}}\label{class_bike_a60962e91ae810aa778bab17257e0f3e4}
+
+\item 
+\hypertarget{class_bike_a7c2901ac61d1e3d82ad4765473b8e556}{int \hyperlink{class_bike_a7c2901ac61d1e3d82ad4765473b8e556}{turn}}\label{class_bike_a7c2901ac61d1e3d82ad4765473b8e556}
+
+\begin{DoxyCompactList}\small\item\em Right turn if turn is one else left turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class for defining bike objects. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Bike.\-h\item 
+Bike.\-cpp\end{DoxyCompactItemize}

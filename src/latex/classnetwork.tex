@@ -1,0 +1,33 @@
+\hypertarget{classnetwork}{\section{network Class Reference}
+\label{classnetwork}\index{network@{network}}
+}
+
+
+The main class which handles all the peer to peer network connections.  
+
+
+
+
+{\ttfamily \#include $<$Network.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classnetwork_a5ea9dc00957d0b6be361d54a6cddb749}{\hyperlink{classnetwork_a5ea9dc00957d0b6be361d54a6cddb749}{network} (int i, int j, int startport)}\label{classnetwork_a5ea9dc00957d0b6be361d54a6cddb749}
+
+\begin{DoxyCompactList}\small\item\em The constructor which takes in the self id and total number of computers in the peer to peer network and the port around which messages are exchanged. \end{DoxyCompactList}\item 
+\hypertarget{classnetwork_a2af46be674cfe8274fd1fce9d7a4ca02}{std\-::stack$<$ \hyperlink{structfourints}{fourints} $>$ \hyperlink{classnetwork_a2af46be674cfe8274fd1fce9d7a4ca02}{receive} (void)}\label{classnetwork_a2af46be674cfe8274fd1fce9d7a4ca02}
+
+\begin{DoxyCompactList}\small\item\em Receives all the messages from all the other computers in the peer to peer network and returns them as a stack. \end{DoxyCompactList}\item 
+\hypertarget{classnetwork_af5cf8f369b4cf9458abd464fda09fa51}{void \hyperlink{classnetwork_af5cf8f369b4cf9458abd464fda09fa51}{send} (\hyperlink{structfourints}{fourints} k)}\label{classnetwork_af5cf8f369b4cf9458abd464fda09fa51}
+
+\begin{DoxyCompactList}\small\item\em Send the information about self to all the other computers in the peer to peer network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main class which handles all the peer to peer network connections. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Network.\-h\item 
+Network.\-cpp\end{DoxyCompactItemize}
